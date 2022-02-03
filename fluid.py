@@ -156,11 +156,34 @@ class Fluid():
         difuse(0, s, density, diff, dt, iter, N)
         advect(0, density, s, Vx, Vy, dt, N)
 
-    def addDensVel(self):
-        self.addVelocity(32,32,20,0)
-        self.addVelocity(32,33,20,0)
-        self.addVelocity(33,32,20,0)
-        self.addVelocity(33,33,20,0)
+    def addDensVel(self,mfcx,mfcy):
+        if(mfcx<=0):
+            if(mfcy<=0):
+                #PRVI KVADRANT
+                teta=np.arctan2(mfcx,mfcy)
+                x=np.sin(teta)
+                y=np.cos(teta)
+            else:
+                #DRUGI KVADRANT
+                teta=np.arctan2(mfcx,mfcy)
+                x=np.sin(teta)
+                y=np.cos(teta)
+        if(mfcx>0):
+            if(mfcy<=0):
+                #TRECI KVADRANT
+                teta=np.arctan2(mfcx,mfcy)
+                x=np.sin(teta)
+                y=np.cos(teta)
+            else:
+                #CETVRTI KVADRANT
+                teta=np.arctan2(mfcx,mfcy)
+                x=np.sin(teta)
+                y=np.cos(teta)
+
+        self.addVelocity(32,32,x*10,y*10)
+        self.addVelocity(32,33,x*10,y*10)
+        self.addVelocity(33,32,x*10,y*10)
+        self.addVelocity(33,33,x*10,y*10)
         self.addDye(32,32,500.0)
         self.addDye(32,33,500.0)
         self.addDye(33,32,500.0)
