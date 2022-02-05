@@ -11,3 +11,4 @@ http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf
 https://mikeash.com/pyblog/fluid-simulation-for-dummies.html - "Fluid Simulation for Dummies" - Mike Ash, 2006
 https://physics.weber.edu/schroeder/javacourse/LatticeBoltzmann.pdf - "Lattice-Boltzmann Fluid Dynamics" - Weber State University, 2012
 https://cowboyprogramming.com/2008/04/01/practical-fluid-mechanics/ - "Practical Fluid Mechanics" - Mich West/ Cowboy Programming, 2008
+https://github.com/CodingTrain/Rainbow-Topics/issues/178 - Lattice Boltzmann methods for fluid simultations -Daniel (CodingTrain) Shiffman, 2019
