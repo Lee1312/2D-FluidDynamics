@@ -31,7 +31,7 @@ def set_bnd(b,x,n):
         else:
             x[n-1,i]=x[n-2,i]
              
-    #for j in range(1,n-1):  
+    #for j in range(1,n-1):  #NOT NECESSARY
         if(b==2):
             x[i,0]=-x[i,1]
         else:

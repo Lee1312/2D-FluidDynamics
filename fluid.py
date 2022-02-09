@@ -9,6 +9,7 @@ class Fluid():
         self.visc=visc  #VISCOSITY
         self.n=int(n)   #SIZE
 
+        #MATRIXES NEEDED FOR REPRESENTATION AND CALCULATION
         self.densityZERO = np.zeros(shape=(self.n,self.n))      
         self.density = np.zeros(shape=(self.n,self.n))
         
@@ -34,7 +35,7 @@ class Fluid():
         advect(0, self.density, self.densityZERO, self.Vx, self.Vy, self.dt, self.n)    #ADVECTS THE DYE
 
     def addDensVel(self,mfcx,mfcy):
-        #Matrix of velocities is like:
+        #Matrix of mouse position is like:
                         
 
             #                    neg
