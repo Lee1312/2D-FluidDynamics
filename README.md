@@ -2,7 +2,7 @@
 
 In this project I have implemented a simple 2D Fluid Dynamics simulation using Python and PyGame for the visual representation. This is a project of mine for the subject "Numerical Algorithms and Numerical Softwares" at The Faculty of Technical Sciences University of Novi Sad.
 
-Sample video:
+Video of finished project:
 https://youtu.be/eF4NM9s76jA
 
 Refferenced Papers and articles:
